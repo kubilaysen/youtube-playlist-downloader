@@ -1,8 +1,3 @@
-# youtube-playlist-downloader
-A Python-based YouTube Playlist Downloader with GUI using Tkinter and yt-dlp.
-
-
-
 import os
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, scrolledtext
@@ -297,7 +292,7 @@ class YouTubePlaylistDownloader:
         self.log("İndirme işlemi durduruluyor...")
         self.button_stop.config(state=tk.DISABLED)
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     root = tk.Tk()
     app = YouTubePlaylistDownloader(root)
     root.mainloop()
